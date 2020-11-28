@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <link rel = stylesheet type="text/css" href = "css/style.css">
+    <script type = "text/javascript" src = "js/jquery-3.5.1.min.js"></script>
+    <script type = "text/javascript" src = "js/todolist.js"></script>
+
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+    <title>TodoList</title>
+</head>
+<body>
+    <body bgcolor= "#f5efb5">
+    <font size= "10" face = "monospace" >TodoList</font> <br><br>
+
+    <script>
+        $(function() {
+          $( "#date" ).datepicker();
+        });        
+    </script>
+    
+    <div>日期：<input type="text" id="date" readonly = "readonly"/></div><br>
+
+    <!--<div>日期: <input type ="text" id = "date" name = "date" />  </div><br>-->
+
+    <div>標題：<input type ="text" id = "title" name = "title"/> </div><br>
+    <div>內容：<input type = "text" id = "message" name = "message"/> </div><br>
+
+    <label for = "colorpicker">標題顏色：</label><input type= "color" id="titleCP" value="#00B7FF"><br><br>
+    <label for = "colorpicker">內文顏色：</label><input type= "color" id="messageCP" value="#dcf4fd"><br><br>
+   
+    <!--<label for = "colorpicker">標題顏色：</label><input type= "color" id="titleCP" ><br><br>
+    <label for = "colorpicker">內文顏色：</label><input type= "color" id="messageCP"><br><br>-->
+
+    <button onclick="addList()">確認</button>
+</body>
+</html>

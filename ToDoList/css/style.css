@@ -1,0 +1,51 @@
+:root{
+    --titleColor: #00B7FF;
+    --messageColor: #dcf4fd;
+}
+
+body{
+    padding: 50px;
+}
+.content{
+    margin: 10px 0;
+}
+
+.title{
+    background-color: var(--titleColor);
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.title2{
+    background-color: var(--titleColor);
+    text-decoration: line-through;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.message{
+    background-color: var(--messageColor);
+    padding: 10px 10px;
+}
+
+.message2{
+    background-color: var(--messageColor);
+    text-decoration: line-through;
+    padding: 10px 10px;
+}
+
+.date{
+    background-color:var(--messageColor);
+    padding: 10px 10px;
+}
+
+.date2{
+    background-color: var(--messageColor);
+    text-decoration: line-through;
+    padding: 10px 10px;
+}
+
+.i_btn{
+    float: right;
+    margin: 1px;
+}
